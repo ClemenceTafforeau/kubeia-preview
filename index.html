@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kubeia - Project preview</title>
+    <link rel="stylesheet" href="src/assets/css/style.css"/>
+    <link rel="icon" href="public/favicon.ico" sizes="32x32">
+    <link href="public/favicon-dark.svg" rel="icon" media="(prefers-color-scheme: light)">
+    <link href="public/favicon-light.svg" rel="icon" media="(prefers-color-scheme: dark)">
+</head>
+<body>
+    <header>
+        <a href="https://github.com/ClemenceTafforeau" class="link github" title="Go to Github profile" target="_blank">
+            <img src="src/assets/icons/github.svg" alt="Github"/>
+            <span>Github</span>
+        </a>
+    </header>
+    <main>
+        <section class="logo-h1-container">
+            <div>
+                <h1>Kubeia</h1>
+                <p>Project preview</p>
+            </div>
+            <img class="logo" src="src/assets/img/kubeia_logo.svg" alt="Kubeia logo"/>
+        </section>
+        <section class="description">
+            <p class="subtitle">Kubeia (κυβεία) is a dungeon crawler inspired by Dungeons & Dragons and Greek mythology.</p>
+            <p>Will you take on the role of the mighty Theseus, the cunning Odysseus, or the determined Orpheus? Each hero embarks on a personal quest: to vanquish the Minotaur, to rescue their companions from a wicked sorceress, or to reunite with their wife in the Underworld. Every area the hero explores is richly described and offers potential actions to take. The dungeon is filled with enemies, treasures, traps, and a formidable final boss awaiting defeat.</p>
+            <hr>
+            <div class="project-timeline">
+                <p class="project">
+                    <span>Hi, I'm Clémence, and this is Kubeia, my student project.</span>
+                    <span>Kubeia is a dungeon crawler browser game developed in Vue.js, born from my love of tabletop role-playing games, mythology and web development.</span>
+                </p>
+                <p>Development began in November 2024, and the first playable version of the game is meant to come out in Spring 2025.</p>
+            </div>
+            <hr>
+        </section>
+        <section class="screenshots">
+            <h2>Screenshots</h2>
+            <div class="screenshots-container">
+                <div class="slideshow-container">
+                    <div class="slides fade">
+                        <div class="numbertext">1 / 7</div>
+                        <img src="src/assets/img/start_screen.webp" alt="Start screen"/>
+                        <div class="text">Start screen</div>
+                    </div>
+                    <div class="slides fade">
+                        <div class="numbertext">2 / 7</div>
+                        <img src="src/assets/img/character_screen.webp" alt="Character screen"/>
+                        <div class="text">Character screen</div>
+                    </div>
+                    <div class="slides fade">
+                        <div class="numbertext">3 / 7</div>
+                        <img src="src/assets/img/entrance_screen.webp" alt="The Labyrinth entrance"/>
+                        <div class="text">The Labyrinth entrance</div>
+                    </div>
+                    <div class="slides fade">
+                        <div class="numbertext">4 / 7</div>
+                        <img src="src/assets/img/combat_component.webp" alt="In combat"/>
+                        <div class="text">In combat</div>
+                    </div>
+                    <div class="slides fade">
+                        <div class="numbertext">5 / 7</div>
+                        <img src="src/assets/img/menu.webp" alt="The menu"/>
+                        <div class="text">The menu</div>
+                    </div>
+                    <div class="slides fade">
+                        <div class="numbertext">6 / 7</div>
+                        <img src="src/assets/img/item_loot.webp" alt="Looting an item"/>
+                        <div class="text">Looting an item</div>
+                    </div>
+                    <div class="slides fade">
+                        <div class="numbertext">7 / 7</div>
+                        <img src="src/assets/img/inventory.webp" alt="The inventory"/>
+                        <div class="text">The inventory</div>
+                    </div>
+                    <button type="button" class="navigation-arrow" id="prev"><span>&#10094;</span></button>
+                    <button type="button" class="navigation-arrow" id="next"><span>&#10095;</span></button>
+                </div>
+                <div class="navigation-dots">
+                    <button type="button" class="navigation-dot"></button>
+                    <button type="button" class="navigation-dot"></button>
+                    <button type="button" class="navigation-dot"></button>
+                    <button type="button" class="navigation-dot"></button>
+                    <button type="button" class="navigation-dot"></button>
+                    <button type="button" class="navigation-dot"></button>
+                    <button type="button" class="navigation-dot"></button>
+                </div>
+            </div>
+        </section>
+        <section class="features">
+            <h2>Features</h2>
+            <ul class="text-list">
+                <li>
+                    <span>Randomly-generated dungeons</span>
+                    <span>A new dungeon is generated each game, which means that the rooms the player can explore will never be in the same order, nor will the player find loot in the same place.</span>
+                </li>
+                <li>
+                    <span>Narrative-led game</span>
+                    <span>Kubeia is focused on narration, and player choices have an influence on how the game plays out.</span>
+                </li>
+                <li>
+                    <span>Dungeons & Dragons-style adventure</span>
+                    <span>Player actions are determined by dice rolls. These dice rolls are influenced by the character's abilities and bonuses applied to these abilities through items or other circumstances.</span>
+                </li>
+                <li>
+                    <span>Turn-based combat</span>
+                    <span>Just like in D&D, combat in Kubeia is turn-based. Initiative is determined as combat starts. The player has four options in combat: they can either attack, use a special attack, use an item or flee combat.</span>
+                </li>
+            </ul>
+        </section>
+        <section class="roadmap">
+            <h2>Development roadmap</h2>
+            <p class="disclaimer">
+                <span>Disclaimer : </span>
+                <span>this project started out as a simple JavaScript exercise on algorithms. I grew fond of the concept however, and added features as I worked on it. Not an example to follow when it comes to project management!</span>
+            </p>
+            <ul class="text-list">
+                <li class="past">
+                    <span>Setting up the project<span class="date"> — mid-November 2024</span></span>
+                    <ul class="roadmap-inner">
+                        <li>Basic player setup logic & enemy system</li>
+                        <li>Initiative system</li>
+                    </ul>
+                </li>
+                <li class="past">
+                    <span>Creating the dungeon<span class="date"> — end of November 2024</span></span>
+                    <ul class="roadmap-inner">
+                        <li>Implementing a dungeon generation system</li>
+                        <li>Applying random room types</li>
+                        <li>Handling dungeon traversal</li>
+                    </ul>
+                </li>
+                <li class="past">
+                    <span>Setting up the project... again (for framework implementation & further development)<span class="date"> — start of December 2024</span></span>
+                    <ul class="roadmap-inner">
+                        <li>Choosing the right frameworks</li>
+                        <li>Creating the game's visual identity</li>
+                        <li>Creating a wireframe for the main parts of the game</li>
+                    </ul>
+                </li>
+                <li class="past">
+                    <span>Creating the combat system<span class="date"> — mid-December 2024</span></span>
+                    <ul class="roadmap-inner">
+                        <li>Designing the combat interface</li>
+                        <li>Implementing combat-related logic (attack, special attacks, health system,...)</li>    
+                        <li>Creating combat-related components</li>
+                    </ul>
+                </li>
+                <li class="past">
+                    <span>Creating an inventory system<span class="date"> — end of December 2024</span></span>
+                    <ul class="roadmap-inner">
+                        <li>Designing items & inventory</li>
+                        <li>Implementing item use during combat & outside of combat</li>    
+                        <li>Creating a loot system</li>
+                    </ul>
+                </li>
+                <li>
+                    <span>Creating a journal system, to keep track of the player's progress</span>
+                </li>
+                <li>
+                    <span>Handling narrative, puzzle and safe rooms</span>
+                </li>
+                <li>
+                    <span>Integrating the combat & inventory system in the dungeon generation process</span>
+                </li>
+                <li>
+                    <span>Creating animations (for combat, dice rolls,...)</span>
+                </li>
+                <li>
+                    <span>Adding a sound system (music & narration)</span>
+                </li>
+                <li>
+                    <span>Adding two new characters, with their specific universes: Odysseus and Orpheus</span>
+                </li>
+            </ul>
+        </section>
+        <section class="technologies">
+            <h2>Technologies</h2>
+            <ul class="tech-list">
+                <li>
+                    <span>Environment :</span>
+                    <span>Node.js</span>
+                </li>
+                <li class="framework">
+                    <div>
+                        <span>JavaScript framework :</span>
+                        <span>Vue.js</span>
+                    </div>
+                    <ul class="framework-list">
+                        <li>
+                            <span>Router :</span>
+                            <span>Vue router</span>
+                        </li>
+                        <li>
+                            <span>State management :</span>
+                            <span>Pinia</span>
+                        </li>
+                        <li>
+                            <span>Plug-ins :</span>
+                            <span class="link-out">
+                                <a href="https://kingsora.github.io/OverlayScrollbars/" title="OverlayScrollbars website" target="_blank">OverlayScrollbars for Vue</a>
+                                <img src="src/assets/icons/new_window_icon.svg" alt="Open in new window"/>
+                            </span>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <span>CSS framework :</span>
+                    <span>Tailwind CSS</span>
+                </li>
+            </ul>
+        </section>
+        <section class="credits">
+            <h2>Credits</h2>
+            <p class="link-out">
+                <span>Designed and developed by </span>
+                <span class="dev">
+                    <a href="https://www.linkedin.com/in/clémence-tafforeau" title="Clémence Tafforeau's Linkedin profile" target="_blank">Clémence Tafforeau</a>
+                    <img src="src/assets/icons/new_window_icon.svg" alt="Open in new window"/>
+                </span>
+            </p>
+        </section>
+    </main>
+    <script src="src/assets/js/slideshow.js"></script>
+</body>
+</html>
