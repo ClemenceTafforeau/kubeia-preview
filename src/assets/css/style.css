@@ -282,6 +282,10 @@ h1 {
     font-size: 2.4rem;
 }
 
+.italic {
+    font-style: italic;
+}
+
 .description p:nth-child(2) {
     font-style: italic;
 }
@@ -404,6 +408,21 @@ ul:not(.roadmap-inner, .tech-list, .framework ul) > li {
     background-color: var(--ku-primary-1);
 }
 
+svg:has(line) {
+    position: absolute;
+    top: 2.4rem;
+    bottom: 0;
+    left: .3rem;
+    height: 95%;
+}
+
+li line {
+    stroke: var(--ku-primary-1);
+    stroke-width: .4rem;
+    stroke-dashoffset: .8rem;
+    stroke-dasharray: .6rem;
+}
+
 .roadmap .roadmap-inner li:last-child {
     padding-block-end: 1.6rem;
 }
@@ -453,6 +472,10 @@ li span:first-child {
 
 .link-out img {
     width: 1rem;
+}
+
+li:has(ul) {
+    flex-direction: column;
 }
 
 .roadmap-inner {
