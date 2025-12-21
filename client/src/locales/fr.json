@@ -1,0 +1,79 @@
+{
+    "title": "Kubeia",
+    "subtitle": "Un dungeon crawler inspiré par Donjons & Dragons et la mythologie grecque",
+    "sections": {
+        "gameplay-core": "Coeur du gameplay",
+        "screenshots": "Le jeu en images",
+        "highlights": "Points forts",
+        "roadmap": "À venir"
+    },
+    "gameplay-core": {
+        "narrative-exploration": {
+            "title": "Exploration narrative",
+            "description": "Tel l'aède devant son auditoire, nous tissons chaque histoire en prose. À vous de la vivre par vos choix."
+        },
+        "characters": {
+            "title": "Choix de votre personnage",
+            "description": "Incarnez trois héros de la Grèce mythique ; chacun a ses forces, ses faiblesses et ses propres défis à relever."
+        },
+        "turn-based-combat": {
+            "title": "Combat au tour par tour",
+            "description": "Certaines rencontres ne se résolvent qu'à la pointe de l'épée. Tour après tour, action après action, les dés trancheront entre la victoire et la mort ; peut-être la vôtre."
+        },
+        "player-progression": {
+            "title": "Progression de votre personnage",
+            "description": "Les lieux explorés regorgent de dangers, mais également de secrets et de reliques perdues. À vous de tourner chaque trouvaille à votre avantage."
+        },
+        "random-generation": {
+            "title": "Environnement aléatoire",
+            "description": "À chaque tentative son chemin à découvrir : les dieux sont capricieux et aiment relancer les dés de votre destinée à chaque nouvel essai."
+        }
+    },
+    "screenshots": [
+        {
+            "image": "start_screen.webp",
+            "caption": "Créez un compte ou jouez au jeu directement"
+        },
+        {
+            "image": "character_choice.webp",
+            "caption": "Choisissez votre personnage et entrez dans leur propre univers"
+        }
+    ],
+    "highlights": [
+        "Vous n'êtes pas satisfaits des conséquences de vos choix ? Réécrivez votre destin, autant que vous le souhaitez.",
+        "Vous voulez seulement faire une partie rapide ? Il n'est pas nécessaire de créer un compte pour jouer",
+        "Si vous souhaitez conserver une trace de vos progrès, vous pouvez vous inscrire à l'aide d'un pseudo et de votre adresse mail seulement.",
+        "Découvrez des mécaniques de dés tirées des jeux de rôles sur table, ainsi qu'une génération aléatoire de l'environnement.",
+        "Nous vous proposons une identité visuelle épurée : retrouvez des silhouettes s'animant sur la page pour illustrer la narration."
+    ],
+    "roadmap": [
+        "Ajout d'une ambiance musicale",
+        "Mise en place d'une narration audio",
+        "Possibilité d'incarner Ulysse et Orphée, avec leurs univers respectifs"
+    ],
+    "footer-section": {
+        "creation": "Jeu créé en solo avec passion : code, narration et visuels.",
+        "made-in": "Made in France, dans la région Centre-Val de Loire.",
+        "contact": "Une question ? Une simple envie de discuter du projet ? N'hésitez pas à nous contacter.",
+        "email": "contact@kubeia.game"
+    },
+    "project-status": {
+        "status": "Statut du projet",
+        "active": "En développement actif",
+        "hiatus": "En hiatus",
+        "update": "Dernière mise à jour"
+    },
+    "languages": {
+        "fr": "FR",
+        "en": "EN"
+    },
+    "buttons": {
+        "previous": "Slide précédente",
+        "next": "Slide suivante",
+        "first": "Première slide",
+        "last": "Dernière slide"
+    },
+    "errors": {
+        "no-commit-date": "Date de dernière mise à jour non disponible"
+    }
+}

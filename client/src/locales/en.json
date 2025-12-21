@@ -1,0 +1,79 @@
+{
+    "title": "Kubeia",
+    "subtitle": "A dungeon crawler inspired by Dungeons & Dragons and Greek mythology",
+    "sections": {
+        "gameplay-core": "Gameplay core",
+        "screenshots": "Screenshots",
+        "highlights": "Game highlights",
+        "roadmap": "Upcoming features"
+    },
+    "gameplay-core": {
+        "narrative-exploration": {
+            "title": "Narrative exploration",
+            "description": "Like a poet before his audience, we weave each story in prose. It is up to you to experience it through your choices."
+        },
+        "characters": {
+            "title": "Character choice",
+            "description": "Play as three heroes from mythical Greece; each has their own strengths, weaknesses and challenges to overcome."
+        },
+        "turn-based-combat": {
+            "title": "Turn-based combat",
+            "description": "Some encounters can only be resolved at sword's point. Round after round, action after action, the dice will decide between victory and death; perhaps your own."
+        },
+        "player-progression": {
+            "title": "Character progression",
+            "description": "The places you explore are full of dangers, but also secrets and lost relics. It's up to you to turn each find to your advantage."
+        },
+        "random-generation": {
+            "title": "Randomly-generated environment",
+            "description": "Each attempt has its own path to discover: the gods are capricious and enjoy rolling the dice of your destiny as you go through another trial."
+        }
+    },
+    "screenshots": [
+        {
+            "image": "start_screen.webp",
+            "caption": "Create an account or play the game straight away"
+        },
+        {
+            "image": "character_choice.webp",
+            "caption": "Choose your character and step into their own universe"
+        }
+    ],
+    "highlights": [
+        "Are you dissatisfied with the consequences of your choices? Rewrite your destiny as many times as you like.",
+        "Just want to play a quick game? You don't need to create an account to play.",
+        "If you would like to keep track of your progress, you can register using just a username and your email address.",
+        "Discover dice mechanics inspired by tabletop role-playing games, as well as random environment generation.",
+        "We offer you a refined visual identity: discover silhouettes coming to life on the page to illustrate the narrative."
+    ],
+    "roadmap": [
+        "Adding background music",
+        "Implementation of audio narration",
+        "Possibility to play as Odysseus and Orpheus, with their respective universes"
+    ],
+    "footer-section": {
+        "creation": "Game created solo with passion: code, narration and visuals.",
+        "made-in": "Made in France, in the Centre-Val de Loire region.",
+        "contact": "Got a question? Just want to chat about the project? Feel free to get in touch.",
+        "email": "contact@kubeia.game"
+    },
+    "project-status": {
+        "status": "Project status",
+        "active": "Active development",
+        "hiatus": "On hiatus",
+        "update": "Latest update"
+    },
+    "languages": {
+        "fr": "FR",
+        "en": "EN"
+    },
+    "buttons": {
+        "previous": "Previous slide",
+        "next": "Next slide",
+        "first": "First slide",
+        "last": "Last slide"
+    },
+    "errors": {
+        "no-commit-date": "Last update unavailable"
+    }
+}

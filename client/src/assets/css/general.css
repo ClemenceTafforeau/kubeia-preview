@@ -1,0 +1,83 @@
+body {
+  font-family: "Quattrocento Sans";
+  font-weight: 400;
+  font-style: normal;
+  background-color: #0e0b08;
+}
+
+button:not[class],
+input[type="submit"],
+input[type="reset"] {
+  background: none;
+  color: inherit;
+  border: none;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
+}
+
+input:focus-visible,
+button:focus-visible {
+  outline: solid 1px #e8d3b9;
+  outline-offset: 4px;
+}
+
+.os-ku-theme {
+  --os-size: 12px !important;
+  --os-padding-perpendicular: 4px !important;
+  --os-handle-bg: #e8d3b9 !important;
+  --os-handle-bg-hover: #daa96c !important;
+  --os-handle-bg-active: #daa96c !important;
+  --os-handle-min-size: 12px !important;
+  --os-handle-interactive-area-offset: 16px !important;
+}
+
+.swiper {
+  overflow: visible !important;
+}
+
+.swiper-pagination-progressbar {
+  background: var(--color-ku-light-transparent-25) !important;
+}
+
+.swiper-pagination-progressbar .swiper-pagination-progressbar-fill {
+  background: var(--color-ku-primary-1) !important;
+}
+
+.swiper-button-prev, .swiper-button-next {
+  color: var(--color-ku-primary-1) !important;
+  width: 2rem !important;
+  height: 2rem !important;
+}
+
+.swiper-button-prev {
+  left: -4rem !important;
+}
+
+.swiper-button-next {
+  right: -4rem !important;
+}
+
+@media only screen and (max-width: 1024px) {
+  .swiper-button-prev {
+    left: 1rem !important;
+    width: 1.5rem !important;
+    height: 1.5rem !important;
+  }
+
+  .swiper-button-next {
+    right: 1rem !important;
+    width: 1.5rem !important;
+    height: 1.5rem !important;
+  }
+}
+
+.swiper-notification {
+  clip: rect(1px, 1px, 1px, 1px);
+  height: 1px;
+  overflow: hidden;
+  width: 1px;
+  position: absolute;
+  white-space: nowrap;
+}

@@ -1,0 +1,26 @@
+@import "tailwindcss";
+@import "./fonts.css";
+@import "./general.css";
+@import "./helpers.css";
+@import "./reset.css";
+
+@theme {
+	--font-display: 'Eczar', 'serif';
+	--font-body: 'Quattrocento Sans', 'sans-serif';
+
+	--color-ku-dark: #0E0B08;
+	--color-ku-dark-transparent-80: hsla(30, 27%, 4%, .80);
+	--color-ku-light: #E8D3B9;
+	--color-ku-light-transparent-75: hsla(33, 51%, 82%, .75);
+	--color-ku-light-transparent-5: hsla(33, 51%, 82%, .5);
+	--color-ku-light-transparent-25: hsla(33, 51%, 82%, .25);
+	--color-ku-light-transparent-04: hsla(33, 51%, 82%, .04);
+	--color-ku-primary-1: #DAA96C;
+	--color-ku-primary-2: #461907;
+	--color-ku-error: #9F2F23;
+
+	--horizontal-spacing-sections: clamp(1rem, 22.2222vw + -4rem, 16rem);
+	--vertical-spacing-sections: clamp(2.5rem, 2.2222vw + 2rem, 4rem);
+
+	--breakpoint-xs: 36rem;
+}

@@ -1,0 +1,18 @@
+<svg width="0" height="0" class="hidden">
+    <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="language_icon">
+        <path d="M12.87 15.07L10.33 12.56L10.36 12.53C12.0547 10.6475 13.3205 8.41951 14.07 6H17V4H10V2H8V4H1V6H12.17C11.5 7.92 10.44 9.75 9 11.35C8.07 10.32 7.3 9.19 6.69 8H4.69C5.42 9.63 6.42 11.17 7.67 12.56L2.58 17.58L4 19L9 14L12.11 17.11L12.87 15.07ZM18.5 10H16.5L12 22H14L15.12 19H19.87L21 22H23L18.5 10ZM15.88 17L17.5 12.67L19.12 17H15.88Z" fill="currentColor"/>
+    </symbol>
+    <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 498 582" id="hexagon_icon">
+        <path d="M248.724 55.6654L449.315 172.941V408.54L248.724 525.815L48.1324 408.54V172.941L248.724 55.6654Z" stroke="currentColor" stroke-width="96" stroke-linecap="round"/>
+    </symbol>
+    <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" id="new_window_icon">
+        <path d="M17 17H3V3H8V1H3C2.46957 1 1.96086 1.21071 1.58579 1.58579C1.21071 1.96086 1 2.46957 1 3V17C1 17.5304 1.21071 18.0391 1.58579 18.4142C1.96086 18.7893 2.46957 19 3 19H17C17.5304 19 18.0391 18.7893 18.4142 18.4142C18.7893 18.0391 19 17.5304 19 17V12H17V17Z" fill="currentColor"/>
+        <path d="M11 1L14.3 4.3L8.60001 10L10 11.4L15.7 5.7L19 9V1H11Z" fill="currentColor"/>
+    </symbol>
+    <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" id="caret_left">
+        <path d="M15.41 16.59L10.83 12L15.41 7.41L14 6L8 12L14 18L15.41 16.59Z" fill="currentColor"/>
+    </symbol>
+    <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" id="caret_right">
+        <path d="M8.59 7.41L13.17 12L8.59 16.59L10 18L16 12L10 6L8.59 7.41Z" fill="currentColor"/>
+    </symbol>
+</svg>
