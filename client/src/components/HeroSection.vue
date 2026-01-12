@@ -8,6 +8,7 @@
     @reference "../assets/css/main.css";
 
     .hero-container {
-        @apply w-full h-128;
+        @apply w-full h-24;
+        /* h-128 when hero ready */
     }
 </style>

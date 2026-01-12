@@ -18,12 +18,21 @@ const textSections = computed(() =>
         <h2 class="screen-reader-text">
             {{ $t("sections.gameplay-core") }}
         </h2>
-        <div v-for="section in textSections" class="title-description-img-container">
-            <div class="title-description-container">
-                <h3 class="gameplay-core-title">{{ section.title }}</h3>
-                <p class="gameplay-core-description">{{ section.description }}</p>
+        <div class="animations-container">
+            <video autoplay loop muted playsinline class="animation">
+                <source src="/src/assets/animations/Theseus-Idle.webm" type="video/webm">
+            </video>
+            <video autoplay loop muted playsinline class="animation">
+                <source src="/src/assets/animations/Keres-Idle.webm" type="video/webm">
+            </video>
+        </div>
+        <div class="text-container">
+            <div v-for="section in textSections">
+                <div class="title-description-container">
+                    <h3 class="gameplay-core-title">{{ section.title }}</h3>
+                    <p class="gameplay-core-description">{{ section.description }}</p>
+                </div>
             </div>
-            <div class="img-container"></div>
         </div>
     </section>
 </template>
@@ -43,19 +52,23 @@ const textSections = computed(() =>
         @apply max-w-[56ch] leading-7;
     }
 
-    .title-description-img-container {
-        @apply py-16 lg:py-20 flex flex-col-reverse lg:flex-row gap-8 lg:gap-12 xl:gap-20 items-start;
+    .text-container {
+        @apply grid grid-cols-2 gap-y-12 py-16;
     }
 
-    .title-description-img-container:nth-of-type(even) {
-        @apply lg:flex-row-reverse;
+    .text-sections-container {
+        @apply py-16 lg:py-8 flex flex-row lg:flex-col gap-8 lg:gap-12 items-start justify-between w-full;
     }
 
     .title-description-container {
-        @apply flex flex-col gap-4 w-full lg:w-3/5 xl:w-1/2 px-(--horizontal-spacing-sections) lg:px-0;
+        @apply flex flex-col gap-4 w-full px-(--horizontal-spacing-sections) lg:px-0;
     }
 
-    .img-container {
-        @apply w-full aspect-3/4 xs:aspect-video h-auto bg-ku-light-transparent-25;
+    .animations-container {
+        @apply flex items-baseline;
+    }
+
+    .animation {
+        @apply w-1/2;
     }
 </style>
