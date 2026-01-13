@@ -6,11 +6,9 @@ import { useI18n } from "vue-i18n";
 
 const { locale } = useI18n();
 
-const text = computed(() => 
-    locale.value === 'fr' ? 
-    Object.values(fr["roadmap"]) : 
-    Object.values(en["roadmap"])
-);
+const text = computed(() => {
+    return locale.value === 'fr' ? fr["roadmap"] : en["roadmap"];
+});
 </script>
 
 <template>
@@ -20,8 +18,10 @@ const text = computed(() =>
         </h2>
         <div class="cards-container">
             <article v-for="line in text" class="card">
-                <div class="img-container"></div>
-                <p class="feature-text">{{ line }}</p>
+                <div class="img-container">
+                    <img :src="`src/assets/img/${line.img}`" :alt="line.alt"/>
+                </div>
+                <p class="feature-text">{{ line.text }}</p>
             </article>
         </div>
     </section>
@@ -51,11 +51,15 @@ const text = computed(() =>
     }
 
     .img-container {
-        @apply aspect-square bg-ku-light-transparent-25 rounded-full w-48 relative;
+        @apply aspect-square bg-ku-light rounded-full w-48 relative flex justify-center items-center;
+    }
+
+    .img-container img {
+        @apply max-h-40;
     }
 
     @media only screen and (min-width: 1472px) {
-        .card:first-of-type .img-container::after, .card:nth-of-type(2) .img-container::after {
+        .card:first-of-type .img-container::after {
             content: "";
             position: absolute;
             background-image: url('../assets/img/meander_small.svg');
@@ -83,14 +87,14 @@ const text = computed(() =>
     }
 
     @media only screen and (max-width: 863px) {
-        .card:first-of-type .img-container::after, .card:nth-of-type(2) .img-container::after {
+        .card:first-of-type .img-container::after {
             content: "";
             position: absolute;
             background-image: url('../assets/img/meander_small.svg');
             background-size: cover;
             width: 60px;
             height: 20px;
-            bottom: -56%;
+            bottom: -72%;
             right: 50%;
             transform: translateX(50%);
         }

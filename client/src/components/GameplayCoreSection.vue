@@ -49,11 +49,11 @@ const textSections = computed(() =>
     }
 
     .gameplay-core-description {
-        @apply max-w-[56ch] leading-7;
+        @apply xl:max-w-[56ch] leading-7;
     }
 
     .text-container {
-        @apply grid grid-cols-2 gap-y-12 py-16;
+        @apply grid xl:grid-cols-2 gap-y-12 gap-x-20 py-16;
     }
 
     .text-sections-container {
@@ -65,10 +65,10 @@ const textSections = computed(() =>
     }
 
     .animations-container {
-        @apply flex items-baseline;
+        @apply flex flex-col sm:flex-row items-baseline relative after:absolute after:bg-ku-light-transparent-04 after:w-full sm:after:h-3/5 after:h-4/5 after:-z-1 after:top-1/2 after:-translate-y-1/2;
     }
 
     .animation {
-        @apply w-1/2;
+        @apply sm:w-1/2 w-full;
     }
 </style>

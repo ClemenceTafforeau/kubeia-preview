@@ -40,16 +40,23 @@
         }
     ],
     "highlights": [
-        "Vous n'êtes pas satisfaits des conséquences de vos choix ? Réécrivez votre destin, autant que vous le souhaitez.",
         "Vous voulez seulement faire une partie rapide ? Il n'est pas nécessaire de créer un compte pour jouer",
         "Si vous souhaitez conserver une trace de vos progrès, vous pouvez vous inscrire à l'aide d'un pseudo et de votre adresse mail seulement.",
         "Découvrez des mécaniques de dés tirées des jeux de rôles sur table, ainsi qu'une génération aléatoire de l'environnement.",
-        "Nous vous proposons une identité visuelle épurée : retrouvez des silhouettes s'animant sur la page pour illustrer la narration."
+        "Nous vous proposons une identité visuelle épurée : retrouvez des silhouettes s'animant sur la page pour illustrer la narration.",
+        "Vous n'êtes pas satisfaits des conséquences de vos choix ? Réécrivez votre destin, autant que vous le souhaitez."
     ],
     "roadmap": [
-        "Ajout d'une ambiance musicale",
-        "Mise en place d'une narration audio",
-        "Possibilité d'incarner Ulysse et Orphée, avec leurs univers respectifs"
+        {
+            "text": "Ajout d'une ambiance musicale et d'une narration audio",
+            "img": "music-icon.webp",
+            "alt": "Une lyre avec des notes de musique"
+        },
+        {
+            "text": "Possibilité d'incarner Ulysse et Orphée, avec leurs univers respectifs",
+            "img": "odysseus-orpheus-icon.webp",
+            "alt": "Une portrait d'Orphée et d'Ulysse"
+        }
     ],
     "footer-section": {
         "creation": "Jeu créé en solo avec passion : code, narration et visuels.",
