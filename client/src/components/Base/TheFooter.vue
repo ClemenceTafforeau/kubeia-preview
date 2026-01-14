@@ -84,7 +84,7 @@ const fetchLastCommit = async () => {
 }
 
 onMounted(() => {
-    fetchLastCommit();
+    // fetchLastCommit();
 })
 </script>
 
