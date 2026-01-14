@@ -1,7 +1,6 @@
 <script setup lang="ts">
 import { onMounted, ref } from 'vue';
 import { Octokit, App } from "octokit";
-import dotenv from 'dotenv'
 import { computed } from "vue";
 import fr from "../../locales/fr.json";
 import en from "../../locales/en.json";
@@ -15,6 +14,12 @@ const text = computed(() =>
     Object.values(en["roadmap"])
 );
 
+const months = computed(() => 
+    locale.value === 'fr' ? 
+    Object.values(fr["months"]) : 
+    Object.values(en["months"])
+);
+
 const status = 'active';
 const loading = ref(false);
 const lastCommitDate = ref(null);
@@ -22,15 +27,39 @@ const error = ref(null);
 const commits = ref([]);
 const contactEmail = import.meta.env.VITE_CONTACT_EMAIL;
 
+const getDefaultDate = () => {
+    const now = new Date();
+    const previousDate = new Date(
+        now.getFullYear(),
+        now.getMonth() - 1
+    );
+
+    const previousMonth = previousDate.getMonth();
+    const previousYear = previousDate.getFullYear();
+
+    const defaultMonth = months.value[previousMonth];
+
+    return `${defaultMonth} ${previousYear}`;
+}
+
 const formattedDate = computed(() => {
-    if (!lastCommitDate.value) return 'Unknown'
+    if (!lastCommitDate.value) return getDefaultDate();
     
-    const date = new Date(lastCommitDate.value)
-    return date.toLocaleDateString('fr-FR', {
-        year: 'numeric',
-        month: 'long',
-        day: 'numeric'
-    })
+    const date = new Date(lastCommitDate.value);
+
+    if (locale.value === 'fr') {
+        return date.toLocaleDateString('fr-FR', {
+            year: 'numeric',
+            month: 'long',
+            day: 'numeric'
+        })
+    } else {
+        return date.toLocaleDateString('en-US', {
+            year: 'numeric',
+            month: 'long',
+            day: 'numeric'
+        })
+    }
 })
 
 const octokit = new Octokit({ auth: import.meta.env.VITE_GITHUB_TOKEN });
