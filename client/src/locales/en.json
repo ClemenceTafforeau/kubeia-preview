@@ -40,11 +40,22 @@
         }
     ],
     "highlights": [
-        "Just want to play a quick game? You don't need to create an account to play.",
-        "If you would like to keep track of your progress, you can register using just a username and your email address.",
-        "Discover dice mechanics inspired by tabletop role-playing games, as well as random environment generation.",
-        "We offer you a refined visual identity: discover silhouettes coming to life on the page to illustrate the narrative.",
-        "Are you dissatisfied with the consequences of your choices? Rewrite your destiny as many times as you like."
+        {
+            "text": "Just want to play a quick game? You don't need to create an account to play.",
+            "img": "hourglass-icon.svg"
+        },
+        {
+            "text": "If you would like to keep track of your progress, you can register using just a username and your email address.",
+            "img": "tablet-icon.svg"
+        },
+        {
+            "text": "Discover dice mechanics inspired by tabletop role-playing games, as well as random environment generation.",
+            "img": "dice-icon.svg"
+        },
+        {
+            "text": "Are you dissatisfied with the consequences of your choices? Rewrite your destiny as many times as you like.",
+            "img": "time-icon.svg"
+        }
     ],
     "roadmap": [
         {

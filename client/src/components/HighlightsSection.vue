@@ -20,8 +20,10 @@ const text = computed(() =>
         </h2>
         <div class="cards-container">
             <article v-for="line in text" class="card">
-                <div class="img-container"></div>
-                <p>{{ line }}</p>
+                <div class="img-container">
+                    <img :src="`/src/assets/img/${line.img}`" alt=""/>
+                </div>
+                <p>{{ line.text }}</p>
             </article>
         </div>
     </section>
@@ -39,7 +41,7 @@ const text = computed(() =>
     }
 
     .card {
-        @apply max-w-[320px] h-120 flex flex-col gap-8;
+        @apply max-w-[320px] flex flex-col justify-center items-center gap-8;
     }
 
     .card p {
@@ -47,6 +49,10 @@ const text = computed(() =>
     }
 
     .img-container {
-        @apply aspect-square bg-ku-light-transparent-25;
+        @apply aspect-square rounded-full w-48 bg-ku-light flex justify-center items-center;
+    }
+
+    .img-container img {
+        @apply max-w-32 h-auto;
     }
 </style>

@@ -35,6 +35,7 @@ button:focus-visible {
 
 .swiper {
   overflow: visible !important;
+  position: relative !important;
 }
 
 .swiper-pagination-progressbar {

@@ -19,20 +19,24 @@ const textSections = computed(() =>
             {{ $t("sections.gameplay-core") }}
         </h2>
         <div class="animations-container">
-            <video autoplay loop muted playsinline class="animation">
-                <source src="/src/assets/animations/Theseus-Idle.webm" type="video/webm">
-            </video>
-            <video autoplay loop muted playsinline class="animation">
-                <source src="/src/assets/animations/Keres-Idle.webm" type="video/webm">
-            </video>
+            <div>
+                <video autoplay loop muted playsinline class="animation">
+                    <source src="/src/assets/animations/Theseus-Idle.webm" type="video/webm">
+                </video>
+            </div>
+            <div>
+                <video autoplay loop muted playsinline class="animation">
+                    <source src="/src/assets/animations/Keres-Idle.webm" type="video/webm">
+                </video>
+            </div>
         </div>
         <div class="text-container">
-            <div v-for="section in textSections">
+            <article v-for="section in textSections">
                 <div class="title-description-container">
                     <h3 class="gameplay-core-title">{{ section.title }}</h3>
                     <p class="gameplay-core-description">{{ section.description }}</p>
                 </div>
-            </div>
+            </article>
         </div>
     </section>
 </template>
@@ -65,10 +69,14 @@ const textSections = computed(() =>
     }
 
     .animations-container {
-        @apply flex flex-col sm:flex-row items-baseline relative after:absolute after:bg-ku-light-transparent-04 after:w-full sm:after:h-3/5 after:h-4/5 after:-z-1 after:top-1/2 after:-translate-y-1/2;
+        @apply flex flex-col sm:flex-row items-baseline;
     }
 
     .animation {
-        @apply sm:w-1/2 w-full;
+        @apply w-full;
+    }
+
+    .animations-container div {
+        @apply relative flex w-full justify-center items-center after:absolute after:bg-ku-light-transparent-10 after:w-full after:h-full after:border-t-8 after:border-b-8 after:border-t-ku-primary-1 after:border-b-ku-primary-1 after:-z-1 after:top-1/2 after:-translate-y-1/2
     }
 </style>

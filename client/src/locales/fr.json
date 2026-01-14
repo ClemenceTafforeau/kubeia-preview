@@ -40,11 +40,22 @@
         }
     ],
     "highlights": [
-        "Vous voulez seulement faire une partie rapide ? Il n'est pas nécessaire de créer un compte pour jouer",
-        "Si vous souhaitez conserver une trace de vos progrès, vous pouvez vous inscrire à l'aide d'un pseudo et de votre adresse mail seulement.",
-        "Découvrez des mécaniques de dés tirées des jeux de rôles sur table, ainsi qu'une génération aléatoire de l'environnement.",
-        "Nous vous proposons une identité visuelle épurée : retrouvez des silhouettes s'animant sur la page pour illustrer la narration.",
-        "Vous n'êtes pas satisfaits des conséquences de vos choix ? Réécrivez votre destin, autant que vous le souhaitez."
+        {
+            "text": "Vous voulez seulement faire une partie rapide ? Il n'est pas nécessaire de créer un compte pour jouer.",
+            "img": "hourglass-icon.svg"
+        },
+        {
+            "text": "Si vous souhaitez conserver une trace de vos progrès, vous pouvez vous inscrire à l'aide d'un pseudo et de votre adresse mail seulement.",
+            "img": "tablet-icon.svg"
+        },
+        {
+            "text": "Découvrez des mécaniques de dés tirées des jeux de rôles sur table, ainsi qu'une génération aléatoire de l'environnement.",
+            "img": "dice-icon.svg"
+        },
+        {
+            "text": "Vous n'êtes pas satisfaits des conséquences de vos choix ? Réécrivez votre destin, autant que vous le souhaitez.",
+            "img": "time-icon.svg"
+        }
     ],
     "roadmap": [
         {
