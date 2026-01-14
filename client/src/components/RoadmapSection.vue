@@ -19,7 +19,7 @@ const text = computed(() => {
         <div class="cards-container">
             <article v-for="line in text" class="card">
                 <div class="img-container">
-                    <img :src="`src/assets/img/${line.img}`" :alt="line.alt"/>
+                    <img :src="`/img/${line.img}`" :alt="line.alt"/>
                 </div>
                 <p class="feature-text">{{ line.text }}</p>
             </article>

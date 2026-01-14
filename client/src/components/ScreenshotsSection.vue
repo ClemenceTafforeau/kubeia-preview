@@ -24,7 +24,7 @@ const screenshotsJson = computed(() => {
 });
 
 const screenshots = computed(() => { 
-    return screenshotsJson.value.map((screenshot: { image: string }) => `/src/assets/img/${screenshot.image}`);
+    return screenshotsJson.value.map((screenshot: { image: string }) => `/img/${screenshot.image}`);
 });
 
 const initSwiper = (swiper) => {
@@ -97,7 +97,7 @@ const togglePagination = (event) => {
                     </div>
                 </swiper-slide>
                 <button @click="togglePagination">
-                    <img class="zoom-icon" :src="isZoomedIn ? '/src/assets/img/zoom-out-icon.svg' : '/src/assets/img/zoom-in-icon.svg'" alt="Zooming feature"/>
+                    <img class="zoom-icon" :src="isZoomedIn ? '/img/zoom-out-icon.svg' : '/img/zoom-in-icon.svg'" alt="Zooming feature"/>
                 </button>
             </swiper>
             <div class="caption-container">

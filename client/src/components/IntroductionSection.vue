@@ -4,7 +4,7 @@
     <section class="introduction-container">
         <div class="title-container">
             <img 
-                src="../assets/img/kubeia_logo_light.svg" 
+                src="/img/kubeia_logo_light.svg" 
                 alt="The Kubeia logo: a silhouette representing Sisyphus hoisting a twenty-sided dice up a steep path."
             />
             <h1 class="screen-reader-text">
