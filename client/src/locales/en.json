@@ -1,28 +1,87 @@
 {
     "title": "Kubeia",
-    "subtitle": "A dungeon crawler inspired by Dungeons & Dragons and Greek mythology",
+    "subtitle": "A narrative roguelike dungeon crawler set in Greek mythology, where every roll of the dice can decide a hero's fate",
     "sections": {
+        "world": "A myth retold",
+        "heroes": "Choose your hero",
         "gameplay-core": "Gameplay core",
         "screenshots": "Screenshots",
         "highlights": "Game highlights",
         "roadmap": "Upcoming features"
     },
+    "world": {
+        "intro": "Gods, monsters and mortals share a world where fate is real — but not fixed, if you have courage, cunning, and a little luck with the dice. Each hero faces their own labyrinth: a mythological trial reinterpreted as a dungeon, one that is as narrative and emotional as it is physical. The creatures you meet are rarely simple obstacles — they are reflections of something more tragic, more human.",
+        "tagline": "The dice are cast. The gods are watching.",
+        "available-now": "Available now",
+        "coming-soon": "Coming soon",
+        "stories": [
+            {
+                "hero": "Theseus",
+                "place": "The Labyrinth of Crete",
+                "synopsis": "King Minos demands his tribute: fourteen young Athenians delivered to the Minotaur. Theseus volunteers to end the slaughter — but the deeper he goes, the more the Minotaur looks like the victim of a curse he never chose.",
+                "themes": ["Guilt", "Curse vs. nature", "Sacrifice"],
+                "status": "available"
+            },
+            {
+                "hero": "Odysseus",
+                "place": "The Palace of Circe",
+                "synopsis": "After the fall of Troy, Odysseus's crew is turned to swine by a sorceress who is more than she appears. Protected by Hermes, he alone must find his way through her palace to free them.",
+                "themes": ["Cunning", "Resistance", "Loyalty"],
+                "status": "locked"
+            },
+            {
+                "hero": "Orpheus",
+                "place": "The Underworld",
+                "synopsis": "Eurydice is dead. Inconsolable, Orpheus descends into Hades's realm, charming its guardians with his music to plead for her return.",
+                "themes": ["Love and loss", "Music", "Grief"],
+                "status": "locked"
+            }
+        ]
+    },
+    "heroes": {
+        "intro": "Fixed stats, a signature weapon, two abilities fuelled by the Favor of the Gods — no character creation, just a hero to become.",
+        "available-now": "Playable now",
+        "coming-soon": "Coming soon — paid campaign",
+        "list": [
+            {
+                "slug": "theseus",
+                "name": "Theseus",
+                "quote": "A daring warrior braving the Labyrinth in order to slay the Minotaur.",
+                "description": "A direct, resilient fighter who meets every threat head-on — built to absorb mistakes and punish openings.",
+                "status": "available"
+            },
+            {
+                "slug": "odysseus",
+                "name": "Odysseus",
+                "quote": "A cunning hero who needs to find his way through Circe's palace to free his comrades.",
+                "description": "Versatile and sharp-witted, leaning on deception and exploiting the enemy's every weakness.",
+                "status": "locked"
+            },
+            {
+                "slug": "orpheus",
+                "name": "Orpheus",
+                "quote": "A resolute poet who descends into the Underworld to rescue his beloved Eurydice.",
+                "description": "Fragile in a fight, magnetic everywhere else — his lyre turns charisma into sustained, aching damage.",
+                "status": "locked"
+            }
+        ]
+    },
     "gameplay-core": {
         "narrative-exploration": {
             "title": "Narrative exploration",
-            "description": "Like a poet before his audience, we weave each story in prose. It is up to you to experience it through your choices."
+            "description": "Like a poet before his audience, we weave every room in prose. Your choices ripple forward — all the way to which ending you earn."
         },
         "characters": {
             "title": "Character choice",
-            "description": "Play as three heroes from mythical Greece; each has their own strengths, weaknesses and challenges to overcome."
+            "description": "Step into the sandals of a hero from Greek myth. Fixed attributes, a signature weapon and two Favor-powered abilities define how you play — no character creation, just a role to embody."
         },
         "turn-based-combat": {
             "title": "Turn-based combat",
-            "description": "Some encounters can only be resolved at sword's point. Round after round, action after action, the dice will decide between victory and death; perhaps your own."
+            "description": "Some encounters can only be resolved at sword's point. Initiative, standard attacks, Favor-fuelled abilities, or a desperate flight — round after round, the dice decide between victory and death; perhaps your own."
         },
         "player-progression": {
             "title": "Character progression",
-            "description": "The places you explore are full of dangers, but also secrets and lost relics. It's up to you to turn each find to your advantage."
+            "description": "The rooms you explore hide dangers, but also lost relics and equipment. What you find — and what you give up to wear it — is yours to decide."
         },
         "random-generation": {
             "title": "Randomly-generated environment",
@@ -41,30 +100,30 @@
     ],
     "highlights": [
         {
-            "text": "Just want to play a quick game? You don't need to create an account to play.",
+            "text": "Just want a quick session? No account needed — jump straight into a 20 to 30 minute run.",
             "img": "hourglass-icon.svg"
         },
         {
-            "text": "If you would like to keep track of your progress, you can register using just a username and your email address.",
+            "text": "Want to track your progress? Register with just a username and an email address to save your run history and unlocked endings.",
             "img": "tablet-icon.svg"
         },
         {
-            "text": "Discover dice mechanics inspired by tabletop role-playing games, as well as random environment generation.",
+            "text": "Roll D4 to D20 in mechanics inspired by tabletop role-playing games, through a labyrinth of 10 to 15 hand-illustrated rooms that reshuffles every run.",
             "img": "dice-icon.svg"
         },
         {
-            "text": "Are you dissatisfied with the consequences of your choices? Rewrite your destiny as many times as you like.",
+            "text": "Not satisfied with how it ended? Death regenerates the whole labyrinth — rewrite your destiny as many times as you like.",
             "img": "time-icon.svg"
         }
     ],
     "roadmap": [
         {
-            "text": "Adding background music and audio narration",
+            "text": "Background music and audio narration, from a modernised Epitaph of Seikilos to combat percussion.",
             "img": "music-icon.webp",
             "alt": "A lyre with music notes"
         },
         {
-            "text": "Possibility to play as Odysseus and Orpheus, with their respective universes",
+            "text": "Play as Odysseus and Orpheus in their own myths — The Palace of Circe and The Underworld — as paid campaigns.",
             "img": "odysseus-orpheus-icon.webp",
             "alt": "A portrait of Orpheus and Odysseus"
         }

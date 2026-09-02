@@ -2,6 +2,8 @@
 import GameplayCoreSection from '../components/GameplayCoreSection.vue';
 import HeroSection from '../components/HeroSection.vue';
 import IntroductionSection from '../components/IntroductionSection.vue';
+import WorldSection from '../components/WorldSection.vue';
+import HeroesSection from '../components/HeroesSection.vue';
 import ScreenshotsSection from '../components/ScreenshotsSection.vue';
 import HighlightsSection from '../components/HighlightsSection.vue';
 import RoadmapSection from '../components/RoadmapSection.vue';
@@ -12,6 +14,8 @@ import RoadmapSection from '../components/RoadmapSection.vue';
     <div class="home-container">
         <HeroSection/>
         <IntroductionSection/>
+        <WorldSection/>
+        <HeroesSection/>
         <GameplayCoreSection/>
         <ScreenshotsSection/>
         <HighlightsSection/>

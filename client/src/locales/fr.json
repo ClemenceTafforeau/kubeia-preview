@@ -1,28 +1,87 @@
 {
     "title": "Kubeia",
-    "subtitle": "Un dungeon crawler inspiré par Donjons & Dragons et la mythologie grecque",
+    "subtitle": "Un dungeon crawler narratif roguelike ancré dans la mythologie grecque, où chaque jet de dé peut décider du destin d'un héros",
     "sections": {
+        "world": "Un mythe réinventé",
+        "heroes": "Choisissez votre héros",
         "gameplay-core": "Coeur du gameplay",
         "screenshots": "Le jeu en images",
         "highlights": "Points forts",
         "roadmap": "À venir"
     },
+    "world": {
+        "intro": "Dieux, monstres et mortels se partagent un monde où le destin est réel — mais pas figé, à condition d'avoir du courage, de la ruse, et un peu de chance aux dés. Chaque héros affronte son propre labyrinthe : une épreuve mythologique réinterprétée comme un donjon, aussi narratif et émotionnel que physique. Les créatures que vous croiserez sont rarement de simples obstacles — elles reflètent quelque chose de plus tragique, de plus humain.",
+        "tagline": "Les dés sont jetés. Les dieux vous observent.",
+        "available-now": "Disponible dès maintenant",
+        "coming-soon": "Bientôt disponible",
+        "stories": [
+            {
+                "hero": "Thésée",
+                "place": "Le Labyrinthe de Crète",
+                "synopsis": "Le roi Minos exige son tribut : quatorze jeunes Athéniens livrés au Minotaure. Thésée se porte volontaire pour mettre fin au massacre — mais plus il avance, plus le Minotaure ressemble à la victime d'une malédiction qu'il n'a jamais choisie.",
+                "themes": ["Culpabilité", "Malédiction contre nature", "Sacrifice"],
+                "status": "available"
+            },
+            {
+                "hero": "Ulysse",
+                "place": "Le Palais de Circé",
+                "synopsis": "Après la chute de Troie, l'équipage d'Ulysse est changé en pourceaux par une magicienne bien plus complexe qu'il n'y paraît. Protégé par Hermès, lui seul doit trouver un chemin à travers son palais pour les libérer.",
+                "themes": ["Ruse", "Résistance", "Loyauté"],
+                "status": "locked"
+            },
+            {
+                "hero": "Orphée",
+                "place": "Les Enfers",
+                "synopsis": "Eurydice est morte. Inconsolable, Orphée descend dans le royaume d'Hadès, charmant ses gardiens par sa musique pour implorer son retour.",
+                "themes": ["Amour et perte", "Musique", "Deuil"],
+                "status": "locked"
+            }
+        ]
+    },
+    "heroes": {
+        "intro": "Des attributs fixes, une arme signature, deux compétences alimentées par la Faveur des Dieux — pas de création de personnage, juste un héros à incarner.",
+        "available-now": "Jouable dès maintenant",
+        "coming-soon": "Bientôt disponible — campagne payante",
+        "list": [
+            {
+                "slug": "theseus",
+                "name": "Thésée",
+                "quote": "Un guerrier intrépide qui brave le Labyrinthe pour terrasser le Minotaure.",
+                "description": "Un combattant direct et robuste qui affronte chaque menace de face — taillé pour encaisser les erreurs et punir la moindre ouverture.",
+                "status": "available"
+            },
+            {
+                "slug": "odysseus",
+                "name": "Ulysse",
+                "quote": "Un héros rusé qui doit se frayer un chemin dans le palais de Circé pour libérer ses compagnons.",
+                "description": "Polyvalent et vif d'esprit, il mise sur la ruse et l'exploitation des failles de l'adversaire.",
+                "status": "locked"
+            },
+            {
+                "slug": "orpheus",
+                "name": "Orphée",
+                "quote": "Un poète déterminé qui descend aux Enfers pour ramener sa bien-aimée Eurydice.",
+                "description": "Fragile au combat, mais magnétique en toute circonstance — sa lyre transforme son charisme en dégâts continus et déchirants.",
+                "status": "locked"
+            }
+        ]
+    },
     "gameplay-core": {
         "narrative-exploration": {
             "title": "Exploration narrative",
-            "description": "Tel l'aède devant son auditoire, nous tissons chaque histoire en prose. À vous de la vivre par vos choix."
+            "description": "Tel l'aède devant son auditoire, nous tissons chaque salle en prose. Vos choix se répercutent jusqu'à la fin que vous obtiendrez."
         },
         "characters": {
             "title": "Choix de votre personnage",
-            "description": "Incarnez trois héros de la Grèce mythique ; chacun a ses forces, ses faiblesses et ses propres défis à relever."
+            "description": "Incarnez un héros de la Grèce mythique. Attributs fixes, arme signature et deux compétences alimentées par la Faveur des Dieux définissent votre façon de jouer — pas de création de personnage, juste un rôle à endosser."
         },
         "turn-based-combat": {
             "title": "Combat au tour par tour",
-            "description": "Certaines rencontres ne se résolvent qu'à la pointe de l'épée. Tour après tour, action après action, les dés trancheront entre la victoire et la mort ; peut-être la vôtre."
+            "description": "Certaines rencontres ne se résolvent qu'à la pointe de l'épée. Initiative, attaques standards, compétences alimentées par la Faveur, ou fuite désespérée — tour après tour, les dés trancheront entre la victoire et la mort ; peut-être la vôtre."
         },
         "player-progression": {
             "title": "Progression de votre personnage",
-            "description": "Les lieux explorés regorgent de dangers, mais également de secrets et de reliques perdues. À vous de tourner chaque trouvaille à votre avantage."
+            "description": "Les lieux explorés regorgent de dangers, mais également de reliques perdues et d'équipement. À vous de décider ce que vous trouvez — et ce que vous êtes prêts à abandonner pour le porter."
         },
         "random-generation": {
             "title": "Environnement aléatoire",
@@ -41,30 +100,30 @@
     ],
     "highlights": [
         {
-            "text": "Vous voulez seulement faire une partie rapide ? Il n'est pas nécessaire de créer un compte pour jouer.",
+            "text": "Vous voulez seulement faire une partie rapide ? Aucun compte n'est nécessaire — lancez-vous directement dans une partie de 20 à 30 minutes.",
             "img": "hourglass-icon.svg"
         },
         {
-            "text": "Si vous souhaitez conserver une trace de vos progrès, vous pouvez vous inscrire à l'aide d'un pseudo et de votre adresse mail seulement.",
+            "text": "Vous souhaitez suivre votre progression ? Inscrivez-vous à l'aide d'un pseudo et d'une adresse mail pour sauvegarder votre historique de parties et vos fins débloquées.",
             "img": "tablet-icon.svg"
         },
         {
-            "text": "Découvrez des mécaniques de dés tirées des jeux de rôles sur table, ainsi qu'une génération aléatoire de l'environnement.",
+            "text": "Lancez des dés de D4 à D20 selon des mécaniques tirées des jeux de rôles sur table, à travers un labyrinthe de 10 à 15 salles dessinées à la main qui se réorganise à chaque partie.",
             "img": "dice-icon.svg"
         },
         {
-            "text": "Vous n'êtes pas satisfaits des conséquences de vos choix ? Réécrivez votre destin, autant que vous le souhaitez.",
+            "text": "Vous n'êtes pas satisfaits de la façon dont l'histoire s'est terminée ? La mort régénère tout le labyrinthe — réécrivez votre destin autant de fois que vous le souhaitez.",
             "img": "time-icon.svg"
         }
     ],
     "roadmap": [
         {
-            "text": "Ajout d'une ambiance musicale et d'une narration audio",
+            "text": "Ajout d'une ambiance musicale et d'une narration audio, d'une version modernisée de l'Épitaphe de Séikilos jusqu'aux percussions de combat.",
             "img": "music-icon.webp",
             "alt": "Une lyre avec des notes de musique"
         },
         {
-            "text": "Possibilité d'incarner Ulysse et Orphée, avec leurs univers respectifs",
+            "text": "Possibilité d'incarner Ulysse et Orphée dans leurs propres mythes — le Palais de Circé et les Enfers — sous forme de campagnes payantes.",
             "img": "odysseus-orpheus-icon.webp",
             "alt": "Une portrait d'Orphée et d'Ulysse"
         }
